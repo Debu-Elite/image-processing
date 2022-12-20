@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <time.h>
 int main()
 {
 
@@ -77,6 +77,8 @@ int main()
 
 fclose(fo);
 fclose(streamIn);
+int time= clock();
+printf("time in second %f",(float)time/CLOCKS_PER_SEC);
 
 
 }
